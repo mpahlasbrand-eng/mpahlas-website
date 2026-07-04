@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPAHLAS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+      border-bottom: 1px solid #222;
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #aaaaaa;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #C8A96E;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 24px;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #C8A96E;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: clamp(40px, 8vw, 80px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .hero-title span {
+      color: #C8A96E;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: #888888;
+      max-width: 480px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 2px;
+      background: #C8A96E;
+      margin: 0 auto 40px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      padding: 14px 36px;
+      background: #C8A96E;
+      color: #0a0a0a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .hero-btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ── PILLARS ── */
+    .pillars {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-top: 1px solid #1a1a1a;
+    }
+
+    .pillar {
+      flex: 1;
+      max-width: 280px;
+      padding: 40px 32px;
+      text-align: center;
+      border-right: 1px solid #1a1a1a;
+    }
+
+    .pillar:last-child {
+      border-right: none;
+    }
+
+    .pillar-icon {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .pillar-title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .pillar-desc {
+      font-size: 12px;
+      color: #666666;
+      line-height: 1.6;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 24px 48px;
+      border-top: 1px solid #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-brand {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #444;
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: #333;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-tag {
+      font-size: 11px;
+      color: #C8A96E;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">MPAHLAS</div>
+    <ul class="nav-links">
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Authentication</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">South African Streetwear</p>
+    <h1 class="hero-title">
+      Authenticated.<br>
+      Curated.<br>
+      <span>Yours.</span>
+    </h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub">
+      Premium local and international streetwear —
+      personally sourced, verified, and priced by us.
+      No middlemen. No fakes.
+    </p>
+    <a href="#" class="hero-btn">Shop the Drop</a>
+  </section>
+
+  <!-- PILLARS -->
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">✓</div>
+      <p class="pillar-title">100% Authentic</p>
+      <p class="pillar-desc">Every item personally inspected and verified before listing.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">◈</div>
+      <p class="pillar-title">Direct from Us</p>
+      <p class="pillar-desc">We are the retailer. No third-party sellers. No strangers.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">◎</div>
+      <p class="pillar-title">Premium Brands</p>
+      <p class="pillar-desc">Galxboy, Cultish, Grade Africa and more — all in one place.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-brand">MPAHLAS</span>
+    <span class="footer-copy">© 2026 Mpahlas. All rights reserved.</span>
+    <span class="footer-tag">Built for the culture.</span>
+  </footer>
+
+</body>
+</html>
